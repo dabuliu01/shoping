@@ -1,0 +1,87 @@
+.nav .dropdown {
+    overflow: hidden;
+}
+
+.buy {
+    height: 607px;
+    background-color: pink;
+}
+
+.left {
+    float: left;
+    width: 415px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+.top {
+    padding: 20px 0 8px 0;
+
+}
+
+.top span:first-child {
+    color: #333;
+}
+
+.top span:nth-child(-n+3):after {
+    content: '\ea53';
+    font-family: 'icomoon';
+    font-size: 15px;
+    margin: 0 12px;
+}
+
+.pic {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ededed;
+    /* 这两个只对行内元素和行内块元素有效 */
+    /* 垂直居中 */
+    line-height: 400px;
+    /* 水平居中 */
+    text-align: center;
+}
+
+.list {
+    position: relative;
+    height: 58px;
+    width: 400px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+.list .left-arrow {
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.list .right-arrow {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.list .little-phone {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 58px;
+    height: 58px;
+    border: 1px solid #c81623;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.list .style {
+    position: absolute;
+    top: 0;
+    left: 108px;
+    width: 242px;
+    height: 58px;
+}
+
+.right {
+    float: right;
+    width: 720px;
+    height: 100%;
+}

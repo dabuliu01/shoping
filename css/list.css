@@ -1,0 +1,153 @@
+/* 列表页专有的css */
+/* 溢出隐藏，防止nav 中盒子行高过大，挤到nav 下面的盒子 */
+.nav {
+    overflow: hidden;
+}
+
+.header .sk {
+    position: absolute;
+    left: 185px;
+    top: 40px;
+    width: 56px;
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid #b1191a;
+    padding-left: 13px;
+}
+
+.nav .sk_list {
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: inline-block;
+    padding: 0 30px;
+    line-height: 47px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.nav .sk_con {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: inline-block;
+    padding: 0 25px;
+    /* nav 高47 行高等于高垂直居中，行高大于高，文字偏下（为了让小一点的文字和大文字基线对齐） */
+    line-height: 49px;
+    font-size: 14px;
+}
+
+/* 选出.sk_con ul 中最后一个li 在里面的a 盒子内部后面 放一个字体图标 */
+.sk_con ul li:last-child a::after {
+    content: '\ea50';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul {
+    width: 1208px;
+}
+
+.sk_bd ul li {
+    float: left;
+    margin-right: 12px;
+    width: 290px;
+    height: 460px;
+    /* 添加透明边框的原因是为了防止鼠标悬在盒子上，出现红色边框时抖动 */
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+
+.sk_bd ul li i {
+    display: inline-block;
+    margin-left: 3px;
+    width: 282px;
+    height: 290px;
+}
+
+.sk_bd ul li h5 {
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sk_bd ul li .price {
+    width: 135px;
+    height: 33px;
+    margin: 7px 0;
+}
+
+.sk_bd ul li .price .now {
+    float: left;
+    margin: 0 10px;
+    font-size: 22px;
+    color: #e60012;
+    font-weight: 700;
+}
+
+.sk_bd ul li .price span {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+    /* 行高大于父盒子高度，可以使文字偏下 */
+    line-height: 37px;
+    font-weight: 700;
+}
+
+.sk_bd ul li .kucun {
+    width: 265px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.sk_bd ul li .kucun .left {
+    float: left;
+    font-size: 14px;
+}
+
+.sk_bd ul li .kucun .jindutiao {
+    overflow: hidden;
+    float: left;
+    width: 135px;
+    height: 12px;
+    border: 1px solid #ed282e;
+    margin-left: 8px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.jindutiao .box {
+    height: 100%;
+    width: 87%;
+    background-color: #ed282e;
+}
+
+.sk_bd ul li .kucun .right {
+    float: right;
+    font-size: 14px;
+}
+
+.right span {
+    color: #e12228;
+}
+
+.sk_bd ul li .qianggou a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: #b1191a;
+    margin-top: 9px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}

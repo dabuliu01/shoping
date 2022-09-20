@@ -1,0 +1,531 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.main .newsflash {
+    float: right;
+    height: 100%;
+    width: 250px;
+}
+
+.newsflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news .news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    font-family: 'icomoon';
+    content: '\ea53';
+    font-size: 14px;
+}
+
+.new_bd ul li {
+    padding-top: 7px;
+    padding-left: 15px;
+    /* 单行文本溢出显示省略号 */
+    /* 1.文字如果显示不开，也必须强制一行内显示 */
+    white-space: nowrap;
+    /* 2.超出部分隐藏 */
+    overflow: hidden;
+    /* 3.文字用省略号替代超出的部分 */
+    text-overflow: ellipsis;
+
+}
+
+.newsflash .lifeservice {
+    /* 隐藏溢出 */
+    overflow: hidden;
+    height: 209px;
+    margin-bottom: 5px;
+    /* 只要左右下边框 */
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    /* 为了让一行装下4个li 将ul 改大一点 */
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    /* 转化成行内块,可以和文字一起用text-align: center; 水平居中 */
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.lifeservice ul li .pic1 {
+    background: url(../images/icons.png) no-repeat -18px -14px;
+}
+
+.lifeservice ul li .pic2 {
+    background: url(../images/icons.png) no-repeat -79px -17px;
+}
+
+.lifeservice ul li .pic3 {
+    background: url(../images/icons.png) no-repeat -141px -16px;
+}
+
+.lifeservice ul li .pic4 {
+    background: url(../images/icons.png) no-repeat -206px -17px;
+}
+
+.lifeservice ul li .pic5 {
+    background: url(../images/icons.png) no-repeat -16px -87px;
+}
+
+.lifeservice ul li .pic6 {
+    background: url(../images/icons.png) no-repeat -78px -86px;
+}
+
+.lifeservice ul li .pic7 {
+    background: url(../images/icons.png) no-repeat -141px -87px;
+}
+
+.lifeservice ul li .pic8 {
+    background: url(../images/icons.png) no-repeat -207px -86px;
+}
+
+.lifeservice ul li .pic9 {
+    background: url(../images/icons.png) no-repeat -15px -159px;
+}
+
+.lifeservice ul li .pic10 {
+    background: url(../images/icons.png) no-repeat -79px -157px;
+}
+
+.lifeservice ul li .pic11 {
+    background: url(../images/icons.png) no-repeat -141px -157px;
+}
+
+.lifeservice ul li .pic12 {
+    background: url(../images/icons.png) no-repeat -208px -159px;
+}
+
+.lifeservice ul li .jian {
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    width: 14px;
+    height: 17px;
+}
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    width: 205px;
+    height: 100%;
+    background-color: #5c5251;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.recom_hd i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.recom_hd h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.recom_bd {
+    float: left;
+    width: 995px;
+    height: 100%;
+    background-color: #ebebeb;
+    padding-top: 20px;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    height: 135px;
+    width: 248px;
+    border-right: 1px solid #dddddd;
+    padding-left: 15px;
+}
+
+/* 让最后一个 li 无边框 */
+.recom_bd ul li:last-child {
+    border: 0;
+}
+
+.recom_bd ul li h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.recom_bd .one {
+    display: inline-block;
+    padding: 0 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.recom_bd .left1 .one {
+    background-color: #00a0e8;
+}
+
+.recom_bd .right1 {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    width: 82px;
+    height: 113px;
+}
+
+.recom_bd ul li a {
+    display: inline-block;
+    margin-top: 15px;
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.recom_bd .left2 a {
+    background-color: #5fb200;
+}
+
+.recom_bd .left3 a {
+    background-color: #e2162f;
+}
+
+.recom_bd .left4 a {
+    background-color: #0085fb;
+}
+
+.recom_bd .left2 .one {
+    background-color: #5fb200;
+}
+
+.recom_bd .left3 .one {
+    background-color: #e2162f;
+}
+
+.recom_bd .left4 .one {
+    background-color: #0085fb;
+}
+
+.recom_bd .right2 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 115px;
+    height: 105px;
+}
+
+.recom_bd .right3 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 105px;
+    height: 112px;
+}
+
+.recom_bd .right4 {
+    position: absolute;
+    top: 0;
+    right: 85px;
+    width: 80px;
+    height: 125px;
+}
+
+.like {
+    height: 265px;
+    /* background-color: pink; */
+    margin-top: 30px;
+}
+
+.like .left {
+    font-size: 18px;
+    color: #333;
+}
+
+.like .right::after {
+    font-family: 'icomoon';
+    content: '\ea2e';
+}
+
+.like .top {
+    position: relative;
+}
+
+.like .right {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.like .bottom {
+    height: 230px;
+    width: 100%;
+    border: 1px solid #ededed;
+    margin-top: 8px;
+}
+
+.bottom ul {
+    width: 1207px;
+}
+
+.bottom ul li {
+    position: relative;
+    float: left;
+    height: 230px;
+    width: 200px;
+    /* background-color: skyblue; */
+    /* 放在父盒子里 */
+    text-align: center;
+}
+
+/* 为了防止文字因为图片大小乱移，将图片放在一个固定大小的盒子中（盒子大小皆选图片最大高，最大宽） */
+.bottom ul li i {
+    display: inline-block;
+    height: 141px;
+    width: 160px;
+    /* background-color: orange; */
+    margin-top: 20px;
+}
+
+.bottom ul li p {
+    line-height: 20px;
+}
+
+.bottom ul li span {
+    position: absolute;
+    left: 38px;
+    bottom: 5px;
+    font-size: 18px;
+    color: #df3033;
+    font-weight: 700;
+}
+
+.bottom ul .xian {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 65px;
+    width: 1px;
+    background-color: #ededed;
+
+}
+
+.bottom ul li .pic2 {
+    padding-top: 20px;
+}
+
+.bottom ul li .pic4 {
+    padding-top: 30px;
+}
+
+/* 家用电器模块 */
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+/* 如果直接让li float: right; 导航栏的字会反着排 */
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    padding: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+/* 让.tab_list_item 中的子代 div 左浮动*/
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+/* 分别给每个div 定义宽度 */
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    /* 给大盒子加，里面的元素都会水平居中 */
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    height: 33px;
+    width: 85px;
+    margin: 0 10px;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    line-height: 33px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ededed;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a 如果包含有宽度的盒子，a 需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ededed;
+}
+
+.pinpai {
+    height: 65px;
+}
+
+/*电梯导航*/
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+    display: none;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
